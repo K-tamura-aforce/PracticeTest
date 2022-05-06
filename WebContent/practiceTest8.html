@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>入力フォーム</title>
+<link href="css/practiceTest8.css" rel="stylesheet">
+</head>
+<body>
+	<form action="practiceTest8Sub.html" method="GET">
+	 <h1>入力フォーム</h1>
+		<label>名前：</label> <input type="text" name="name" value=""><br>
+		<label>メールアドレス：</label><input type="text" name="mail" value=""><br>
+		<label>誕生日：</label>
+		<select name="birthday">
+			<option value="1" selected>1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		<select name="birthmonth">
+			<option value="1" selected>1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select><br>
+		<label>性別：</label>
+		<input type="radio"  name="gender" value="male">
+        <label>男性</label>
+        <input type="radio"  name="gender" value="female">
+        <label>女性</label><br>
+        <label>OS：</label>
+        <input type="checkbox"  name="os" value="Windows7">
+        <label>Windows7</label>
+        <input type="checkbox"  name="os" value="Windows8">
+        <label>Windows8</label>
+        <input type="checkbox"  name="os" value="Windows10">
+        <label>Windows10</label>
+        <input type="checkbox"  name="os" value="Mac">
+        <label>Mac</label>
+        <input type="checkbox"  name="os" value="Linux">
+        <label>Linux</label><br>
+        <label>ひとこと:</label>
+        <textarea name="one thing" rows="4" cols="40"></textarea><br>
+        <input type="submit" value="登録">
+	</form>
+
+</body>
+</html>

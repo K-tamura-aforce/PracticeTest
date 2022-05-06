@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cart</title>
+<link href="css/cart.css" media="all" rel="stylesheet">
+</head>
+<body>
+	<form name="price">
+		<div>
+			<h3>カート内容</h3>
+			<!-- 表作成 -->
+			<table border="1">
+				<tr>
+					<th>商品</th>
+					<th>商品名</th>
+					<th>単価(円)</th>
+					<th>数量(個)</th>
+					<th>小計(税込)</th>
+				</tr>
+				<!-- 商品1 -->
+				<tr>
+					<td><img src="img/banana.png" alt="バナナ"></td>
+					<td align="center">バナナ（1本）</td>
+					<td><p class="unitprice" id="bananaPrice">100</p></td>
+					<td align="center"><select name="cnt1" class="select" data-fruit="banana">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+					</select></td>
+					<td><p class="subtotal" id="bananaSubtotal">0
+						<p></td>
+				</tr>
+				<!-- 商品2 -->
+				<tr>
+					<td><img src="img/apple.png" alt="リンゴ" class="photo"></td>
+					<td align="center">リンゴ（1個）</td>
+					<td><p class="unitprice" id="applePrice">150</p></td>
+					<td align="center"><select name="cnt2" class="select" data-fruit="apple">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+					</select></td>
+					<td><p class="subtotal" id="appleSubtotal">0
+						<p></td>
+				</tr>
+				<!-- 商品3 -->
+				<tr>
+					<td><img src="img/orange.png" alt="orange"></td>
+					<td align="center">オレンジ（1個）</td>
+					<td><p class="unitprice" id="orangePrice">130</p></td>
+					<td align="center"><select name="cnt3" class="select" data-fruit="orange">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+					</select></td>
+					<td><p class="subtotal" id="orangeSubtotal">0
+						<p></td>
+				</tr>
+				<!-- 合計値 -->
+				<tr>
+					<td colspan="4" align="center"><strong>合計(円)</strong></td>
+					<td align="right"><strong id="total"></strong></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<script src="js/index.js"></script>
+</body>
+</html>

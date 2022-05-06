@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+img{
+	width:150px;
+	height:auto;
+}
+
+.unitprice,#subtotal1,#subtotal2,#subtotal3{
+	text-align:right;
+}
